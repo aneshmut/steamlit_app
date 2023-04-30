@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.13.1+cpu
+torch==2.0.0+cpu
 torchvision==0.15.0+cpu
 streamlit
 Pillow==9.3.0
