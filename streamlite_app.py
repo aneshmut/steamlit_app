@@ -103,7 +103,7 @@ class Modified_Alexnet(nn.Module):
 
 # Load pre-trained model
 cnn=Modified_Alexnet(3)
-cnn.load_state_dict(torch.load("aneshmut_assignment2_part3.pth"))
+cnn.load_state_dict(torch.load("aneshmut_assignment2_part3.pth", map_location=torch.device('cpu')))
 
 
 # Set up device (GPU if available, otherwise CPU)
