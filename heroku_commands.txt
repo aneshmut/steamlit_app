@@ -1,0 +1,7 @@
+go to the directory of application in your local
+ 
+heroku login
+heroku git:clone -a streamlit-appimg 
+git add .
+git commit -am "make it better"
+git push heroku master
