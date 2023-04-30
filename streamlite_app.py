@@ -12,19 +12,9 @@ import streamlit as st
 from PIL import Image
 
 
-# In[ ]:
-
-
-
-
-
-# In[9]:
-
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-
-# In[10]:
 
 
 class Modified_Alexnet(nn.Module):
@@ -103,7 +93,7 @@ class Modified_Alexnet(nn.Module):
 
 # Load pre-trained model
 cnn=Modified_Alexnet(3)
-cnn.load_state_dict(torch.load("aneshmut_assignment2_part3.pth", map_location=torch.device('cpu')))
+cnn.load_state_dict(torch.load("model.pth", map_location=torch.device('cpu')))
 
 
 # Set up device (GPU if available, otherwise CPU)
